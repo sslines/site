@@ -1,0 +1,73 @@
+<div class="parallax-container page-header valign-wrapper">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 center">
+                    <h5 class="header white-text text-lighten-2">Schedules and Pricing</h5>
+                    <p class="white-text text-darken-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper elementum massa. Aliquam cursus laoreet dolor, ac ullamcorper diam ullamcorper vestibulum. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax news" parallax="schedBG" id="schedBG">
+        <img src="images/schedule.jpg">
+    </div>
+</div>
+<div class="container">
+    <div class="section">
+        <div class="row sched-form-input">
+            <div class="col s12 m4">
+                <label for="fromDate" class="">From</label>
+                <input type="date" class="datepicker" datepicker id="fromDate">
+            </div>
+            <div class="col s12 m4">
+                <label for="toDate" class="">To</label>
+                <input type="date" class="datepicker" datepicker id="toDate">
+            </div>
+            <div class="col s12 m4">
+                <div class="input-field destination">
+                    <select material-select>
+                        <option value="" disabled selected>Choose your Destination</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                    <label>Destination</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <table class="bordered hide-on-med-and-down sched-price-table-section">
+                    <thead>
+                        <th>Boat</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Approximation</th>
+                        <th>Route</th>
+                        <th>Regular Price</th>
+                        <th>Student Price</th>
+                        <th>Senior Price</th>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="sched in tableSchedList">
+                            <td>{{sched.boat}}</td>
+                            <td>{{sched.date}}</td>
+                            <td>{{sched.time}}</td>
+                            <td>{{sched.appro}}</td>
+                            <td>{{sched.route}}</td>
+                            <td>{{sched.reg}}</td>
+                            <td>{{sched.stud}}</td>
+                            <td>{{sched.senior}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul class="collapsible popout sched-price-section hide-on-large-only" data-collapsible="accordion">
+                </ul>
+            </div>
+            <div class="col s12 center">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper elementum massa. Aliquam cursus laoreet dolor, ac ullamcorper diam ullamcorper vestibulum. Etiam risus massa, dapibus a commodo pharetra, imperdiet sit amet metus. Sed finibus, dolor id consectetur porttitor, ante augue pharetra risus, vitae sodales ante enim at lacus. Maecenas pharetra tempus neque, non porta magna tincidunt eget. </p>
+            </div>
+        </div>
+    </div>
+</div>

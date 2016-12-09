@@ -1,0 +1,12 @@
+<nav class="app-bar" role="navigation">
+  <div class="nav-wrapper" ng-controller="SideNavCtrl">
+    <ul class="side-menu left hide-on-med-and-down">
+      <li><a href="" data-activates="nav-mobile" side-nav id="menuBtnA"><i class="material-icons left">menu</i>Menu</a></li>
+    </ul>
+    <a id="logo-container" href="#/" class="brand-logo center">Starhorse Shipping Lines</a>
+    <ul id="nav-mobile" class="side-nav">
+      <li ng-repeat="list in linkList"><a ui-sref={{list.link}} class="waves-effect waves-light">{{list.title}}</a></li>
+    </ul>
+    <a href="" data-activates="nav-mobile" class="button-collapse" side-nav id="menuBtnB"><i class="material-icons">menu</i></a>
+  </div>
+</nav>

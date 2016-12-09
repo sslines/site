@@ -1,0 +1,40 @@
+<ul id="nav-mobile-dashboard" class="side-nav dashboard-side-nav fixed" style="left: 0px;" ng-controller="DashboardSideNavCtrl">
+  <li class="user">
+    <p class="left-align">
+      <img src="images/user.jpg" class="circle" />
+    </p>
+    <p class="left-align white-text">user@example.com</p>
+
+</li>
+  <li class="bold nav-list-item" ng-repeat="list in dashboardLinkList" ng-class="{ activeItem:isActive('/{{list.className}}')}">
+    <a ui-sref={{list.link}} class="waves-effect waves-light">
+      <i class="material-icons">{{list.icon}}</i>
+      <span>{{list.title}}</span>
+    </a>
+  </li>
+</ul>
+<div class="row">
+  <ul id="dashboardMore" class="dropdown-content dashboard">
+    <li><a href="#!">Homepage</a>
+    </li>
+    <li><a href="#!">Profile</a>
+    </li>
+    <li class="divider"></li>
+    <li><a href="#!">Logout</a>
+    </li>
+  </ul>
+  <nav class="dashboard-nav">
+    <div class="nav-wrapper">
+      <ul class="side-menu db-side-menu left hide-on-large-only">
+        <li><a href="" data-activates="nav-mobile-dashboard" class="side-nav" id="dashboardA"><i class="material-icons left">menu</i>Menu</a></li>
+      </ul>
+      <ul class="right">
+        <li class="dashboard-settings">
+          <a class="dropdown-button" dropdown href="#!" data-activates="dashboardMore">Settings<i class="material-icons right">more_vert</i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<main class="dashboard-main" ui-view="dashboardView"></main>

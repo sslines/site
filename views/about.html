@@ -1,0 +1,96 @@
+<div class="parallax-container page-header valign-wrapper">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <div class="row center">
+                <h5 class="header white-text text-lighten-2">Who are we?</h5>
+                <p class="white-text text-darken-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper elementum massa. Aliquam cursus laoreet dolor, ac ullamcorper diam ullamcorper vestibulum. </p>
+            </div>
+        </div>
+    </div>
+    <div class="parallax" id="aboutBg" parallax="aboutBg"><img src="images/about-home.jpg"></div>
+</div>
+<div class="container mission-section center valign-wrapper">
+    <div class="section">
+        <div class="row">
+            <div class="col s12">
+                <h5 class="header grey-text text-darken-2">Mission and Vision</h5>
+                <p class="grey-text text-darken-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper elementum massa. Aliquam cursus laoreet dolor, ac ullamcorper diam ullamcorper vestibulum. Etiam risus massa, dapibus a commodo pharetra, imperdiet sit amet metus. Sed finibus, dolor id consectetur porttitor, ante augue pharetra risus, vitae sodales ante enim at lacus. Maecenas pharetra tempus neque, non porta magna tincidunt eget. </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="about-container history valign-wrapper">
+    <div class="container history-section center">
+        <div class="section">
+            <div class="row">
+                <div class="col s12 m4">
+                    <img class="responsive-img" src="images/history.jpg" />
+                </div>
+                <div class="col s12 m8">
+                    <h5 class="header grey-text text-lighten-5">History</h5>
+                    <p class="grey-text text-lighten-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper elementum massa. Aliquam cursus laoreet dolor, ac ullamcorper diam ullamcorper vestibulum. Etiam risus massa, dapibus a commodo pharetra, imperdiet sit amet metus.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="service-section center ">
+    <div class="section container">
+        <div class="row">
+            <div class="col s12 m12">
+                <h5 class="header grey-text text-darken-2">Services</h5>
+                <div class="col s12 m8">
+                    <p class="grey-text text-darken-1 left-align valign-wrapper">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper elementum massa. Aliquam cursus laoreet dolor, ac ullamcorper diam ullamcorper vestibulum. Etiam risus massa, dapibus a commodo pharetra, imperdiet sit amet metus. Sed finibus, dolor id consectetur porttitor, ante augue pharetra risus, vitae sodales ante enim at lacus. Maecenas pharetra tempus neque, non porta magna tincidunt eget. </p>
+                </div>
+                <div class="col s12 m4">
+                    <img class="responsive-img" src="images/services.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container people-section">
+    <div class="section">
+        <div class="row">
+            <div class="col s12 m12">
+                <h5 class="header grey-text text-darken-2 center">Meet the Team</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m12">
+                    <img class="responsive-img" src="images/management.jpg" />
+               
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m12">
+                    <h6 class="grey-text text-darken-3 left-align bold">Lorem Ipsum</h6>
+                    <p class="grey-text text-darken-1 left-align valign-wrapper">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper elementum massa. Aliquam cursus laoreet dolor, ac ullamcorper diam ullamcorper vestibulum.</p>
+                    </div>
+        </div>
+    </div>
+</div>
+<div class="vessels-section">
+    <div class="section container">
+        <div class="row">
+            <div class="col s12 m12">
+                <h5 class="header grey-text text-darken-2 center">Our Vessels</h5>
+                <div class="col s12 m4" ng-repeat="vessel in vessels">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" ng-src={{vessel.img}}>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">{{vessel.name}}<i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Name of Vessel<i class="material-icons right">close</i></span>
+                            <p>{{vessel.details}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
